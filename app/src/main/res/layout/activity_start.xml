@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/myBlue"
+        tools:context="com.arturagapov.speechmaster.StartActivity">
+    <!--Logo-->
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            android:layout_marginTop="80dp"
+            android:contentDescription="logo"/>
+    <TextView
+            android:id="@+id/app_name"
+            android:text="@string/app_name"
+            android:layout_below="@+id/logo"
+            android:textColor="@color/myWhite"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_app_name"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/get_started"
+            android:textSize="20sp"
+            android:textColor="@color/myBlack"
+            android:id="@+id/button_get_started"
+            android:gravity="center"
+            android:background="@drawable/button_get_started"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:onClick="onClickGetStarted"
+            android:layout_alignParentStart="false"/>
+
+</RelativeLayout>
